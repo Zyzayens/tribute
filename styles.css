@@ -1,0 +1,44 @@
+#main{
+  background : lightgray;
+  display : grid;
+  grid-template-columns : 1fr 1fr;
+  grid-template-rows : 100px 1fr auto;
+  grid-column-gap : 2% ;
+  grid-row-gap : 2% ;
+  grid-template-areas :
+  "header header"
+  "content picture"
+  "footer footer ";
+}
+#title{
+  text-align : center;
+  background-color : gray;
+  grid-area : header;
+  font-family : monospace;
+}
+#titre{
+  font-family : monospace;
+  text-align : center;
+}
+#tribute-info{
+  background-color : gray;
+  grid-area : content;
+    align-self : center;
+}
+#img-div{
+
+  grid-area : picture;
+  justify-self : end;
+  align-self : center;
+}
+#image {
+  display : block ;
+  max-width : 100%;
+  height : auto;
+  align : center;
+  justify : center;
+}
+#links{
+  background : white;
+  grid-area : footer;
+}
